@@ -24,6 +24,11 @@ import com.spring.member.vo.MemberVO;
 @Controller(value = "memberController")
 public class MemberControllerImpl implements MemberController {
 	
+	/*
+	 * Marks a constructor, field, setter method, or config method as to be
+	 * autowired by Spring's dependency injection facilities.
+	 */
+	
 	@Autowired	
 	private MemberService memberService;
 
