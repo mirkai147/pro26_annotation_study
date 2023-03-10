@@ -22,6 +22,13 @@ public class LoginController4 {
 		return mav;
 	}
 	
+	
+	/*
+	 * 메서드 매개변수 또는 메서드 반환 값을 웹 보기에 노출된 명명된 모델 속성에 바인딩하는 주석입니다.
+	 * Annotation that binds a method parameter or 
+	 * method return value to a named
+	 * model attribute, exposed to a web view
+	 */
 	@RequestMapping(value = {"/test/login4.do"}, method = {RequestMethod.GET, RequestMethod.POST})
 	public ModelAndView login(@ModelAttribute("info") LoginVO loginVO, HttpServletRequest request, HttpServletResponse response) throws Exception {
 		ModelAndView mav = new ModelAndView();
